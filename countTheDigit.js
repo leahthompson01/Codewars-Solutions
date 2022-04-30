@@ -37,3 +37,24 @@ function nbDig(n, d) {
   return count
   
 }
+
+// Who Likes It
+function likes(names) {
+  let str = ''
+  if(!names.length){
+    return 'no one likes this'
+  } else if(names.length >= 4){
+    return `${names[0]}, ${names[1]} and ${names.length-2} others like this`
+  } else if (names.length === 1){
+     return `${names[0]} likes this`
+  }
+  else {
+    if(names.length === 2){
+      for (let i=0; i<names.length-1; i++)
+       str += `${names[i]}`
+    } else {
+    str += `${names[0]}, ${names[1]}`
+  }
+  return str+= ` and ${names[names.length-1]} like this`
+}
+}
