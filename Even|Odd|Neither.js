@@ -1,5 +1,6 @@
+
+// https://www.codewars.com/kata/reviews/61da500170fffc0001dd7260/groups/627ddf96eb1a7400010d9e12
 function oddOrEven(n) {
-  //n = 8 1+2+3+4+5+6+7+8 
   if(n % 2 === 0){
     if(((n/2) % 2 !== 0)){
        return ODD
